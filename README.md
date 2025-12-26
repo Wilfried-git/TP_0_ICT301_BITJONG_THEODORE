@@ -15,7 +15,7 @@ depot pour heberger le 1er tp ICT301 25-26
     hjj
     
 #  Description du principe LSP
-    nn
+    implique que l'on doit pouvoir substituer la classe parent par la classe fille car celle ci doit respecter la relation "est un" exple un cercle est une forme (geometrique).
     
 #  Description du principe OCP
     implique qu'une classe ne doit etre ouverte a l'extention et non aux modifications. les changements ne devrait pas modifier le code existant mais juste l'incorporer a cette logique. exemple un Factory Pattern.
