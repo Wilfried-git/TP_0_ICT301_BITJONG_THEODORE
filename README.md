@@ -18,7 +18,7 @@ depot pour heberger le 1er tp ICT301 25-26
     nn
     
 #  Description du principe OCP
-    mj
+    implique qu'une classe ne doit etre ouverte a l'extention et non aux modifications. les changements ne devrait pas modifier le code existant mais juste l'incorporer a cette logique. exemple un Factory Pattern.
     
 #  Description du principe SRP
-    nm
+    se principe implique qu'une classe ne doit avoir qu'une seule responsabilite, une seul raison de changer, enfin d'etre modifier par un programmeur. si une classe a plusieur responsabilitees on peut reecrire la classe de base et creer d'autres classes qui l'utilise. 

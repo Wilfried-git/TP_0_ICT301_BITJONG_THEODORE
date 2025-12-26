@@ -1,5 +1,3 @@
-// Gère les données du livre
-
 public class BookSRP {
     private String title;
     private String author;
@@ -12,7 +10,6 @@ public class BookSRP {
     }
 
     // Méthodes pour accéder aux données (getters)
-
     public String getTitle() {
         return title;
     }
@@ -36,7 +33,6 @@ class BookPrinter {
     }
 
     // On peut ajouter d'autres méthodes d'affichage sans toucher à BookSRP
-
     public void printToHTML(BookSRP book) {
         System.out.println("\n===Print to HTML=== ");
         System.out.println("<h1>" + book.getTitle() + "</h1>");

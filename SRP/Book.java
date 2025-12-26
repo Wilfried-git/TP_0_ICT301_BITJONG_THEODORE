@@ -1,18 +1,12 @@
 
 public class Book {
-
     private String title;
-
     private String author;
-
     private String content;
 
     public Book(String title, String author, String content) {
-
         this.title = title;
-
         this.author = author;
-
         this.content = content;
     }
 
@@ -48,17 +42,4 @@ public class Book {
 }
 
 // Utilisation de la classe Book
-public class Main {
-
-    public static void main(String[] args) {
-
-        Book book = new Book("Les principes SOLID", "Etudiants de M1-GL", "Révision des principes SOLID");
-
-        book.printToScreen();
-
-        book.saveToDatabase();
-
-        book.emprunter("Marcial");
-
-    }
-}
+// La classe Main doit être déplacée dans Main.java
