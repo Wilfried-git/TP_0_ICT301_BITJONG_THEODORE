@@ -1,5 +1,5 @@
- package ictsolid.srp;
- // Gère les données du livre
+// Gère les données du livre
+
 public class BookSRP {
     private String title;
     private String author;
@@ -13,20 +13,26 @@ public class BookSRP {
 
     // Méthodes pour accéder aux données (getters)
 
-    public String getTitle() { return title; }
-    public String getAuthor() { return author; }
-    public String getContent() { return content; }
+    public String getTitle() {
+        return title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public String getContent() {
+        return content;
+    }
 }
 
-
-
- class BookPrinter {
+class BookPrinter {
     // Méthode pour afficher le livre à l'écran
     public void printToScreen(BookSRP book) {
         System.out.println("===Print to Screen=== ");
         System.out.println("Titre: " + book.getTitle());
         System.out.println("Auteur: " + book.getAuthor());
-        System.out.println("Contenu: " + book.getContent());    
+        System.out.println("Contenu: " + book.getContent());
     }
 
     // On peut ajouter d'autres méthodes d'affichage sans toucher à BookSRP
@@ -39,28 +45,30 @@ public class BookSRP {
     }
 }
 
-
 // Classe BookSaver : persistance
 class BookSaver {
     public void saveToDatabase(BookSRP book) {
         System.out.println("\nSauvegarde de '" + book.getTitle() + "' en base de données...");
     }
 
-        //On peut ajouter d'autres façons de sauvegarder
+    // On peut ajouter d'autres façons de sauvegarder
     public void saveToFile(BookSRP book, String filename) {
-System.out.println("\nSauvegarde de '" + book.getTitle() + "' dans " + filename); }
+        System.out.println("\nSauvegarde de '" + book.getTitle() + "' dans " + filename);
+    }
 }
+
 // Classe BookBusinessLogic : Logique métier
- class BookBusinessLogic {
+class BookBusinessLogic {
 
-public void emprunter(BookSRP book, String lecteur) {
+    public void emprunter(BookSRP book, String lecteur) {
 
-System.out.println("\nEmprunt du livre '" + book.getTitle() + "' par " + lecteur); }
+        System.out.println("\nEmprunt du livre '" + book.getTitle() + "' par " + lecteur);
+    }
 
-//On peut ajouter d'autres logiques
+    // On peut ajouter d'autres logiques
 
-public void autreService(BookSRP book) {
+    public void autreService(BookSRP book) {
 
-System.out.println("\nAutre logique métier sur le livre '" + book.getTitle());}
- }
-
+        System.out.println("\nAutre logique métier sur le livre '" + book.getTitle());
+    }
+}
