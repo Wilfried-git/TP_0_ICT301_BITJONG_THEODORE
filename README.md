@@ -12,7 +12,7 @@ depot pour heberger le 1er tp ICT301 25-26
     nn
     
 #  Description du principe ISP
-    hjj
+    implique que Le client d’une classe ne doit pas être forcé de dépendre de méthodes qu’il n’utilise pas.
     
 #  Description du principe LSP
     implique que l'on doit pouvoir substituer la classe parent par la classe fille car celle ci doit respecter la relation "est un" exple un cercle est une forme (geometrique).
